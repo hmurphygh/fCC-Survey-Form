@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <title>Survey</title>
+    <link rel='stylesheet' href='styles.css' />
+  </head>
+  <body>
+    <h1 id='title'>Survey project</h1>
+    <p id='description'>Short survey form for project</p>
+    <form id='survey-form'>
+      <label id='name-label'>Name<input id='name' name='name' type='text' placeholder="enter your name..." required /></label>
+      <label id='email-label'>Email<input id='email' name='email' type='email' placeholder='enter your email...' required /></label>
+      <label id='number-label'>Number<input id='number' name='number' type='number' min='1' max='150' placeholder='enter a number...' /></label>
+      <input id='button1' type='radio' name='button-choice' class='inline' value='button1' />Button1
+      <input id='button2' type='radio' name='button-choice' class='inline' value='button2' />Button2
+      <label for='dropdown'>
+        <select id='dropdown' name='dropdown'>
+          <option value=''>(Select one)</option>
+          <option value='1'>Option 1</option>
+          <option value='2'>Option 2</option>
+        </select>
+      </label>
+      <input id='redcb' name='checkbox' type='checkbox' value='red'><label for='redcb'>Red</label>
+      <input id='orgcb' name='checkbox' type='checkbox' value='orange'><label for='orgcb'>Orange</label>
+      <input id='yelcb' name='checkbox' type='checkbox' value='yellow'><label for='yelcb'>Yellow</label>
+      <input id='grncb' name='checkbox' type='checkbox' value='green'><label for='grncb'>Green</label>
+      <input id='bluecb' name='checkbox' type='checkbox' value='blue'><label for='bluecb'>Blue</label>
+      <input id='indcb' name='checkbox' type='checkbox' value='Indigo'><label for='indcb'>Indigo</label>
+      <input id='viocb' name='checkbox' type='checkbox' value='violet'><label for='viocb'>Violet</label>
+      <label for='add-comments'>Additional Comments:<textarea id='add-comments' name='add-comments' rows='4' cols='40' placeholder='Write comments here...'></textarea></label>
+      <input id='submit' type='submit' value='Submit' />
+     </form>
+    </body>
+  </html>
